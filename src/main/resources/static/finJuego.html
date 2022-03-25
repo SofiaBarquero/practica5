@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Informacion Jugador</title>
+    <link rel="stylesheet" href="./finJuego.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+<div class="wrapper">
+    <header>
+
+
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo"><img id="logo" src ="https://sofiabarquero.github.io/Pract4/Resources/Logo.png"></div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li ><a id="Historia" href="#">Historia</a></li>
+                    <li><a href="Peliculas.html">Peliculas MCU</a></li>
+                    <li><a  href="Nivel.html">Juego</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <form id="form" onsubmit="return mostrarInfo()">
+            <br><br> <button type="submit" style="text-align:center margin-left:30%" >MOSTRAR INFORMACION DE LA PARTIDA</button><br>
+        </form>
+        <div style="text-align:center">
+            <h1 id="nombre"></h1><br>
+            <h1 id="apellidos"></h1><br>
+            <h1 id="edad"></h1><br>
+            <h1 id="nivel"></h1><br>
+            <h1 id="aciertos"></h1><br>
+        </div>
+
+        <div id="informacion"></div>
+
+    </main>
+
+
+
+
+    <footer>
+        <div class="rrss">
+            <p id="Encuentranos">Encuéntranos</p>
+            <ul class="socialIcons">
+                <li class="facebook"><a href="https://es-es.facebook.com/Marvel"><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
+                <li class="twitter"><a href="https://twitter.com/marvelstudios"><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
+                <li class="instagram"><a href="https://www.instagram.com/marvel/?hl=es"><i class="fa fa-fw fa-instagram"></i>Instagram</a></li>
+                <li class="pinterest"><a href="https://www.pinterest.es/marvelofficial/"><i class="fa fa-fw fa-pinterest"></i>Pinterest</a></li>
+                <li class="pinterest"><a href="https://www.youtube.com/c/marvel/featured"><i class="fa fa-fw fa-youtube"></i>YouTube</a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+</div>
+<script src="finJuego.js"></script>
+</body>
+</html>

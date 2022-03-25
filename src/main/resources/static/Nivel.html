@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Who said...?</title>
+    <link rel="stylesheet" href="./Nivel.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+<div class="wrapper">
+    <header>
+
+
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo"><img id="logo" src ="https://sofiabarquero.github.io/Pract4/Resources/Logo.png"></div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li ><a  href="Historia.html">Historia</a></li>
+                    <li><a href="Peliculas.html">Peliculas MCU</a></li>
+                    <li><a id="Juego" href="#">Juego</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <br><br><br>
+        <div style="text-align:center;" class="WhoSaid"><img id="WhoSaid" src ="https://sofiabarquero.github.io/Pract4/Resources/whosaid.png"></div>
+        <h1 style="text-align: center">Adivina qui&eacuten dijo la frase y en qu&eacute pel&iacutecula:</h1>
+        <br><br>
+
+        <form style="text-align:center" method="get" onsubmit="return validarFormulario()" id="formularioJugador">
+            <p><b>Nombre: </b><input id="nombre"  type="text"  /></p>
+            <p><b>Apellidos: </b><input id="apellidos"  type="text"  /></p>
+            <p><b>Edad: </b><input id="edad" type="number"  /></p>
+
+        <br><br>
+
+        <div style="text-align:center; " class="Nivel"><img style="height:40px;" id="Nivel" src ="https://sofiabarquero.github.io/Pract4/Resources/EligeNivel.png"></div>
+        <br><br>
+        <div style="text-align:center" class="DivisionPag">
+            <button id="facil" type="submit"> <img src="https://sofiabarquero.github.io/Pract4/Resources/Facil.png" height ="80" width="100" /></button>
+            <button id="medio" type="submit" onclick="location.href='medio.html'"> <img src="https://sofiabarquero.github.io/Pract4/Resources/Medio.png" height ="80" width="100" /></button>
+            <button id="dificil" type="submit" onclick="location.href='dificil.html'"> <img src="https://sofiabarquero.github.io/Pract4/Resources/Dificil.png" height ="80" width="100" /></button>
+            <h3>Adivina la película</h3>
+            <h3>Adivina quién dice la frase</h3>
+            <h3>Adivina la película y quién lo dice</h3>
+        </div>
+        </form>
+
+    </main>
+
+
+
+    <footer>
+        <div class="rrss">
+            <p id="Encuentranos">Encuéntranos</p>
+            <ul class="socialIcons">
+                <li class="facebook"><a href="https://es-es.facebook.com/Marvel"><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
+                <li class="twitter"><a href="https://twitter.com/marvelstudios"><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
+                <li class="instagram"><a href="https://www.instagram.com/marvel/?hl=es"><i class="fa fa-fw fa-instagram"></i>Instagram</a></li>
+                <li class="pinterest"><a href="https://www.pinterest.es/marvelofficial/"><i class="fa fa-fw fa-pinterest"></i>Pinterest</a></li>
+                <li class="pinterest"><a href="https://www.youtube.com/c/marvel/featured"><i class="fa fa-fw fa-youtube"></i>YouTube</a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+</div>
+<script src = "Nivel.js"></script>
+</body>
